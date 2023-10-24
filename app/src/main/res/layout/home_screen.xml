@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4EAE7">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Tic Tac Toe!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+    />
+
+    <TextView
+        android:id="@+id/tvChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose how you want to play"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+    />
+
+    <Button
+        android:id="@+id/btnPlayAgainstComputer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Against Computer"
+        app:layout_constraintTop_toBottomOf="@+id/tvChoose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"
+        />
+
+    <Button
+        android:id="@+id/btnPlayAgainstPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Against a Person"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayAgainstComputer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
